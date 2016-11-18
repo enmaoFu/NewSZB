@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <View
+                android:id="@+id/hr1"
+                android:layout_height="10px"
+                android:background="#85D6E9"
+                android:layout_width="match_parent">
+            </View>
+            
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/hr1"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_height="20dp"
+                    android:background="#85D6E9"
+                    android:layout_width="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp">
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心电指标"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr2"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll">
+            </View>
+
+            <TextView
+                android:id="@+id/context"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/hr2"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:paddingRight="35dp"
+                android:text="我终于明白无法用言语形容粗犷而忧伤回声的千结百绕而守候的是执着一如月光下的高原一抹淡淡痴痴的笑笑那浮华落尽 月色如洗笑那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合在你的清辉下亘古不变谁那灼灼热烈的双眸在你的颔首中攀援而上"/>
+
+            <View
+                android:id="@+id/hr3"
+                android:layout_height="15dp"
+                android:background="#F5F5F5"
+                android:layout_below="@+id/context"
+                android:layout_width="match_parent">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/hr3"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_height="20dp"
+                    android:background="#85D6E9"
+                    android:layout_width="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp">
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="症状描述"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr5"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll1">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/hr5">
+
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传心电图"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/add"
+                    android:text="选择图片"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#78EBD2"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="确定上传"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#72D69F"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="35dp"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

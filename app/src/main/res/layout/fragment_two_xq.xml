@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <View
+                android:id="@+id/hr1"
+                android:layout_height="10px"
+                android:background="#85D6E9"
+                android:layout_width="match_parent">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/hr1"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_height="20dp"
+                    android:background="#85D6E9"
+                    android:layout_width="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp">
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心电指标"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr2"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll">
+            </View>
+
+            <TextView
+                android:id="@+id/context"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/hr2"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:paddingRight="35dp"/>
+
+            <TextView
+                android:id="@+id/context1"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:layout_toRightOf="@+id/context"
+                android:layout_below="@+id/hr2"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:paddingRight="35dp"/>
+
+
+            <View
+                android:id="@+id/hr3"
+                android:layout_height="15dp"
+                android:background="#F5F5F5"
+                android:layout_below="@+id/context"
+                android:layout_width="match_parent">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/hr3"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_height="20dp"
+                    android:background="#85D6E9"
+                    android:layout_width="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp">
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="症状描述"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr5"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll1">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/fhimg"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/hr5"
+                android:gravity="center">
+
+                <com.yy.newszb.views.SmoothImageView
+                    android:id="@+id/fhimg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:adjustViewBounds="true"/>
+
+                <com.yy.newszb.views.SmoothImageView
+                    android:id="@+id/fhimg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:adjustViewBounds="true"/>
+
+                <com.yy.newszb.views.SmoothImageView
+                    android:id="@+id/fhimg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:adjustViewBounds="true"/>
+
+                <com.yy.newszb.views.SmoothImageView
+                    android:id="@+id/fhimg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/yzbut"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/fhimg"
+                android:text="发起预诊"
+                android:visibility="gone"/>
+            
+            <TextView
+                android:id="@+id/yzjg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/yzbut"
+                android:text="返回的预诊结果"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

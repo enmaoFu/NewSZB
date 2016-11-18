@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:id="@+id/hr1"
+                    android:layout_height="10px"
+                    android:background="#85D6E9"
+                    android:layout_width="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/hr1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_height="20dp"
+                        android:background="#85D6E9"
+                        android:layout_width="5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp">
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基本信息"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="#85D6E9"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:text="既往史"/>
+
+                    <Button
+                        android:id="@+id/add"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="#85D6E9"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:text="确定新增"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hr2"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll">
+                </View>
+
+                <TableLayout
+                    android:id="@+id/linl"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@+id/hr2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="20dp">
+
+                    <TableRow>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="姓名："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+                            
+                            <EditText
+                                android:id="@+id/name"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <RadioGroup
+                                android:id="@+id/ssss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="性别:"
+                                    android:textSize="15sp"
+                                    android:textColor="#333333"/>
+
+                                <RadioButton
+                                    android:id="@+id/boy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:text="男"/>
+
+                                <RadioButton
+                                    android:id="@+id/boy1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:text="女"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="出生年月："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/time"
+                                android:layout_width="130dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="年龄："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/age"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="电话："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/dh"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="民族："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/mz"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="户籍："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/hj"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="身份证号："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/sfz"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="婚姻状况:"
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <RadioGroup
+                                android:id="@+id/ss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/boy2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:text="已婚"/>
+
+                                <RadioButton
+                                    android:id="@+id/boy12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:text="未婚"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="工作单位："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/dw"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="家庭住址："
+                                android:textSize="15sp"
+                                android:textColor="#333333"/>
+
+                            <EditText
+                                android:id="@+id/zz"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/content_bg2"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr3"
+                android:layout_height="15dp"
+                android:background="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <View
+                    android:id="@+id/hr11"
+                    android:layout_height="10px"
+                    android:background="#85D6E9"
+                    android:layout_width="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/hr11"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_height="20dp"
+                        android:background="#85D6E9"
+                        android:layout_width="5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp">
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="症状描述"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hr21"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll1">
+                </View>
+
+                <EditText
+                    android:id="@+id/context"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/hr21"
+                    android:textColor="#666666"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingRight="35dp"
+                    android:background="@drawable/content_bg2"/>
+
+                <View
+                    android:id="@+id/hr31"
+                    android:layout_height="15dp"
+                    android:background="#F5F5F5"
+                    android:layout_below="@+id/context"
+                    android:layout_width="match_parent">
+                </View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <View
+                    android:id="@+id/hr111"
+                    android:layout_height="10px"
+                    android:background="#85D6E9"
+                    android:layout_width="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/ll11"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/hr111"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_height="20dp"
+                        android:background="#85D6E9"
+                        android:layout_width="5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp">
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诊断结果"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hr211"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll11">
+                </View>
+
+                <EditText
+                    android:id="@+id/context1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/hr211"
+                    android:textColor="#666666"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingRight="35dp"
+                    android:background="@drawable/content_bg2"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

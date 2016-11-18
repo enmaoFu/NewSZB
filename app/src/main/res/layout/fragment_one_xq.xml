@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:id="@+id/hr1"
+                    android:layout_height="10px"
+                    android:background="#85D6E9"
+                    android:layout_width="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/hr1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_height="20dp"
+                        android:background="#85D6E9"
+                        android:layout_width="5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp">
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基本信息"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="#85D6E9"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:text="既往史"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hr2"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll">
+                </View>
+
+                <TableLayout
+                    android:id="@+id/linl"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/hr2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="20dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="姓名：张三"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/sex"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="姓别：男"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/dete"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="出生日期：1999-10-10"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="年龄：18"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/dh"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="电话：12452302598"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/mz"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="名族：汉"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/hj"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="户籍：重庆沙坪坝"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/idnumber"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="身份证：122359789952620225"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/hy"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="婚姻状况：未婚"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/dw"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="工作单位：北京时诊科技"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/zz"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="家庭住址：重庆市XXXXXXXXX"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr3"
+                android:layout_height="15dp"
+                android:background="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <View
+                    android:id="@+id/hr11"
+                    android:layout_height="10px"
+                    android:background="#85D6E9"
+                    android:layout_width="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/hr11"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_height="20dp"
+                        android:background="#85D6E9"
+                        android:layout_width="5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp">
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="症状描述"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hr21"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll1">
+                </View>
+
+                <TextView
+                    android:id="@+id/context"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/hr21"
+                    android:textColor="#666666"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingRight="35dp"
+                    android:text="我终于明白无法用言语形容粗犷而忧伤回声的千结百绕而守候的是执着一如月光下的高原一抹淡淡痴痴的笑笑那浮华落尽 月色如洗笑那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合在你的清辉下亘古不变谁那灼灼热烈的双眸在你的颔首中攀援而上"/>
+
+                <View
+                    android:id="@+id/hr31"
+                    android:layout_height="15dp"
+                    android:background="#F5F5F5"
+                    android:layout_below="@+id/context"
+                    android:layout_width="match_parent">
+                </View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <View
+                    android:id="@+id/hr111"
+                    android:layout_height="10px"
+                    android:background="#85D6E9"
+                    android:layout_width="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/ll11"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/hr111"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_height="20dp"
+                        android:background="#85D6E9"
+                        android:layout_width="5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp">
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诊断结果"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hr211"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll11">
+                </View>
+
+                <TextView
+                    android:id="@+id/context1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/hr211"
+                    android:textColor="#666666"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingRight="35dp"
+                    android:text="我终于明白无法用言语形容粗犷而忧伤回声的千结百绕而守候的是执着一如月光下的高原一抹淡淡痴痴的笑笑那浮华落尽 月色如洗笑那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合那悄然而逝 飞花万盏谁是那轻轻颤动的百合在你的清辉下亘古不变谁那灼灼热烈的双眸在你的颔首中攀援而上"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
