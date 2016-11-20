@@ -145,7 +145,7 @@ public class OneFragment extends BaseFragment implements View.OnClickListener,Ht
     }
 
     /**
-     * 登陆Handler消息异步
+     * Handler消息异步
      */
     Handler oneHandler = new Handler(){
 
